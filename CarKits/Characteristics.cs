@@ -58,7 +58,7 @@ namespace CarKits
             get { return engine; }
             set { engine = value; }
         }
-        private double weight;          
+        private double weight;
 
         public double Weight
         {
@@ -66,6 +66,21 @@ namespace CarKits
             set { weight = value; }
         }
 
+        public Characteristics(string brand, string carcase, int capacity, int power, int maxspeed, string gearbox, string engine, double weight)
+        {
+            Brand = brand;
+            Carcase = carcase;
+            Capacity = capacity;
+            Power = power;
+            Maxspeed = maxspeed;
+            Gearbox = gearbox;
+            Engine = engine;
+            Weight = weight;
+        }
+        public string CarInfo()
+            {
+            return string.Format("Марка: {0}  |  Кузов: {1}  |  Объем: {2} см^3  |  Мощность: {}л.с.  | Макс.скорость: {}км/ч  | Коробка передач: {}  | Топливо: {}  | Масса: {} |");
+            }
 
     }
 }
