@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarKits
 {
-    class Characteristics1
+    class Characteristics2
     {
         private string brand;
 
@@ -66,7 +66,7 @@ namespace CarKits
             set { weight = value; }
         }
 
-        public Characteristics1(string brand, string carcase, int capacity, int power, int maxspeed, string gearbox, string engine, double weight)
+        public Characteristics2(string brand, string carcase, int capacity, int power, int maxspeed, string gearbox, string engine, double weight)
         {
             Brand = brand;
             Carcase = carcase;
@@ -77,7 +77,7 @@ namespace CarKits
             Engine = engine;
             Weight = weight;
         }
-        public string CarInfo1()
+        public string CarInfo2()
         {
             return string.Format("Марка: {0}  |  Кузов: {1}  |  Объем: {2} см^3  |  Мощность: {3}л.с.  | Макс.скорость: {4}км/ч  | Коробка передач: {5}  | Топливо: {6}  | Масса: {7} |");
         }
