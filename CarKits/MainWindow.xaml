@@ -8,7 +8,7 @@
         Title="MainWindow" Height="750" Width="1000">
 
     <TextBlock TextWrapping="Wrap"><Run Foreground="Blue" FontWeight="Bold" FontSize="100" Text="Добро пожаловать!"/><InlineUIContainer>
-            <Button x:Name="button" Content="Войти" Margin="300" Width="289" RenderTransformOrigin="5.986,11.372" Height="63"/>
+            <Button x:Name="button" Content="Войти" Margin="300" Width="289" RenderTransformOrigin="5.986,11.372" Height="63" Click="button_Click"/>
         </InlineUIContainer></TextBlock>
 
 </Window>
