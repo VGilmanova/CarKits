@@ -66,6 +66,7 @@
     <Compile Include="Characteristics.cs" />
     <Compile Include="Characteristics1.cs" />
     <Compile Include="Characteristics2.cs" />
+    <Compile Include="Characteristics3.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
