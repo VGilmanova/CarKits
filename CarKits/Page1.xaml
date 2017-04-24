@@ -7,10 +7,12 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Page1">
-    
+
 
     <Grid>
         <TextBlock Text="BMW" HorizontalAlignment="Center" FontSize="32"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="172" Margin="0,63,0,0" VerticalAlignment="Top" Width="273"/>
+        <Button x:Name="button" Content="Показать данные" HorizontalAlignment="Left" Height="26" Margin="138,264,0,0" VerticalAlignment="Top" Width="135"/>
 
     </Grid>
 </Page>
