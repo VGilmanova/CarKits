@@ -30,7 +30,7 @@ namespace CarKits
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader("../../audi.txt", Encoding.Default))
+            using (StreamReader sr = new StreamReader("../../suzuki.txt", Encoding.Default))
                 while (!sr.EndOfStream)
                 {
                     string brand = sr.ReadLine();
