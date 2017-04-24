@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace CarKits
 {
@@ -20,9 +21,29 @@ namespace CarKits
     /// </summary>
     public partial class Page1 : Page
     {
+        List<Characteristics> chrc = new List<Characteristics>();
         public Page1()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            using (StreamReader sr = new StreamReader("../../bmw.txt", Encoding.Default))
+                while (!sr.EndOfStream)
+                {
+                    string brand = sr.ReadLine();
+                    string carcase = sr.ReadLine();
+                    int capacity = int.Parse(sr.ReadLine());
+                    int power = int.Parse(sr.ReadLine());
+                    int maxspeed= int.Parse(sr.ReadLine());
+                    string gearbox = sr.ReadLine();
+                    string engine = sr.ReadLine();
+                    double weight = double.Parse(sr.ReadLine());
+                    chrc.Add(new Characteristics(brand, carcase, capacity, power, maxspeed, gearbox, engine, weight));
+                }
+            foreach (Characteristics crist in chrc)
+                chrcList.Items.Add(crist.CarInfo());
         }
     }
 }
