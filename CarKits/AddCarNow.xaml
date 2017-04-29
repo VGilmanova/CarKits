@@ -8,19 +8,21 @@
         Title="Добавить машину" Height="400" Width="300">
     <Grid Margin="0,0,0,-5">
         <Grid.RowDefinitions>
-            <RowDefinition Height="325*"/>
-            <RowDefinition Height="49*"/>
+            <RowDefinition Height="327*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="14*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="brand" HorizontalAlignment="Left" Height="26" Margin="24,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
-        <TextBox x:Name="carcase" HorizontalAlignment="Left" Height="26" Margin="24,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
-        <TextBox x:Name="capacity" HorizontalAlignment="Left" Height="26" Margin="24,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
-        <TextBox x:Name="gearbox" HorizontalAlignment="Left" Height="26" Margin="24,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
-        <TextBox x:Name="maxspeed" HorizontalAlignment="Left" Height="26" Margin="24,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" Grid.RowSpan="2"/>
+        <TextBox x:Name="newbrand" HorizontalAlignment="Left" Height="26" Margin="24,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="newcarcase" HorizontalAlignment="Left" Height="26" Margin="24,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="newcapacity" HorizontalAlignment="Left" Height="26" Margin="24,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="newgearbox" HorizontalAlignment="Left" Height="26" Margin="24,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="newmaxspeed" HorizontalAlignment="Left" Height="26" Margin="24,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" Grid.RowSpan="2"/>
         <Label x:Name="label1" Content="Марка" HorizontalAlignment="Left" Height="32" Margin="24,10,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="label1_Copy" Content="Кузов" HorizontalAlignment="Left" Height="32" Margin="24,75,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="label1_Copy1" Content="Объём (см^3)" HorizontalAlignment="Left" Height="32" Margin="24,152,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="label1_Copy2" Content="Коробка передач" HorizontalAlignment="Left" Height="32" Margin="24,215,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="label1_Copy3" Content="Скорость (км/ч)" HorizontalAlignment="Left" Height="32" Margin="24,278,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button x:Name="addFinalCar_Click" Content="Добавить" HorizontalAlignment="Left" Height="22" Margin="86,17,0,0" Grid.Row="1" VerticalAlignment="Top" Width="177" Click="addFinalCar_Click" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
