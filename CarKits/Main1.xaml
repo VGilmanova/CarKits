@@ -1,0 +1,17 @@
+﻿<Window x:Class="CarKits.Main1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarKits"
+        mc:Ignorable="d"
+        Title="Создайте свой список машин" Height="350" Width="500">
+    <Grid>
+        <ListBox x:Name="listbox" HorizontalAlignment="Left" Height="110" Margin="10,22,0,0" VerticalAlignment="Top" Width="395"/>
+        <Button x:Name="addCar_Click" Content="Добавить машину" HorizontalAlignment="Left" Height="29" Margin="10,164,0,0" VerticalAlignment="Top" Width="156"/>
+        <Button x:Name="deleteCar_Click" Content="Удалить машину" HorizontalAlignment="Left" Height="29" Margin="10,213,0,0" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="searcher" HorizontalAlignment="Left" Height="29" Margin="296,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
+        <Button x:Name="searchCar_Click" Content="Поиск" HorizontalAlignment="Left" Height="19" Margin="365,198,0,0" VerticalAlignment="Top" Width="79"/>
+
+    </Grid>
+</Window>
