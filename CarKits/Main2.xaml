@@ -1,0 +1,25 @@
+﻿<Window x:Class="CarKits.Main2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarKits"
+        mc:Ignorable="d"
+        Title="Главная страница" Height="350" Width="500">
+    
+    <Grid>
+        <TextBlock Margin="21,51,329,244">
+        <Hyperlink NavigateUri="Page1.xaml">BMW</Hyperlink>
+<Hyperlink NavigateUri="Page2.xaml">AUDI</Hyperlink>
+            <Hyperlink NavigateUri="Page3.xaml">LADA</Hyperlink>
+            <Hyperlink NavigateUri="Page4.xaml">SUZUKI</Hyperlink>
+        </TextBlock>
+        <Label x:Name="label" Content="Посмотрите на характеристики предложенных вам машин:" HorizontalAlignment="Left" Height="30" Margin="21,21,0,0" VerticalAlignment="Top" Width="399"/>
+        <Label x:Name="label1" Content="Если вы хотите составить собственный список машин, то пройдите по ссылке:" HorizontalAlignment="Left" Height="31" Margin="21,80,0,0" VerticalAlignment="Top" Width="446"/>
+        <TextBlock Margin="21,116,373,183">
+            <Hyperlink RequestNavigate="Main1.xaml">Личный кабинет</Hyperlink>
+        </TextBlock>
+        
+
+    </Grid>
+</Window>
