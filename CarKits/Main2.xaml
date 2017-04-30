@@ -5,21 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarKits"
         mc:Ignorable="d"
-        Title="Главная страница" Height="350" Width="500">
-    
+        Title="Главная страница" Height="500" Width="700">
+
     <Grid>
-        <TextBlock Margin="21,51,329,244">
-        <Hyperlink NavigateUri="Page1.xaml">BMW</Hyperlink>
-<Hyperlink NavigateUri="Page2.xaml">AUDI</Hyperlink>
-            <Hyperlink NavigateUri="Page3.xaml">LADA</Hyperlink>
-            <Hyperlink NavigateUri="Page4.xaml">SUZUKI</Hyperlink>
-        </TextBlock>
-        <Label x:Name="label" Content="Посмотрите на характеристики предложенных вам машин:" HorizontalAlignment="Left" Height="30" Margin="21,21,0,0" VerticalAlignment="Top" Width="399"/>
-        <Label x:Name="label1" Content="Если вы хотите составить собственный список машин, то пройдите по ссылке:" HorizontalAlignment="Left" Height="31" Margin="21,80,0,0" VerticalAlignment="Top" Width="446"/>
-        <TextBlock Margin="21,116,373,183">
+        <Label x:Name="label" Content="Посмотрите на характеристики предложенных вам машин:" HorizontalAlignment="Left" Height="30" Margin="21,10,0,0" VerticalAlignment="Top" Width="399"/>
+        <Label x:Name="label1" Content="Если вы хотите составить собственный список машин, то пройдите по ссылке:" HorizontalAlignment="Left" Height="31" Margin="0,387,0,0" VerticalAlignment="Top" Width="446"/>
+        <TextBlock Margin="49,423,540,25">
             <Hyperlink RequestNavigate="Main1.xaml">Личный кабинет</Hyperlink>
         </TextBlock>
-        
-
+        <StackPanel x:Name="stack" Orientation="Horizontal" HorizontalAlignment="Left" Height="20" Margin="33,45,0,0" VerticalAlignment="Top" Width="580">
+            <Button Content="BMW" MinWidth="80" Click="BWW_btn"/>
+            <Button Content="AUDI" MinWidth="80" Click="AUDI_btn" />
+            <Button Content="LADA" MinWidth="80" Click="LADA_btn"/>
+            <Button Content="SUZUKI" MinWidth="80" Click="SUZUKI_btn"/>
+        </StackPanel>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="324" Margin="33,45,0,0" VerticalAlignment="Top" Width="580" Navigated="Main_Navigated"  />
     </Grid>
 </Window>

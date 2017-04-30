@@ -23,5 +23,22 @@ namespace CarKits
         {
             InitializeComponent();
         }
+
+        private void BWW_btn(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Page1();
+        }
+        private void AUDI_btn(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Page2();
+        }
+        private void LADA_btn(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Page3();
+        }
+        private void SUZUKI_btn(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Page4();
+        }
     }
 }
