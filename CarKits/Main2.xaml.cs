@@ -40,5 +40,10 @@ namespace CarKits
         {
             Main.Content = new Page4();
         }
+        private void add1Car_Click(object sender, RoutedEventArgs e)
+        {
+            Main1 wnd1 = new Main1(this);
+            wnd1.Show();
+        }
     }
 }

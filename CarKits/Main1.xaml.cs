@@ -19,9 +19,12 @@ namespace CarKits
     /// </summary>
     public partial class Main1 : Window
     {
+        Main2 wnd1;
+        public Main1(Main2 w1);
          List<CustomCars> cars = new List<CustomCars>();
         public Main1()
         {
+            wnd1 = w1;
             InitializeComponent();
 
             using (FileStream fs=new FileStream(@"../../input.txt", FileMode.OpenOrCreate, FileAccess.Read))

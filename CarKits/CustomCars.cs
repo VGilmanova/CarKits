@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarKits
 {
-    class CustomCars
+   public class CustomCars
     {
         private string brand;
 

@@ -26,7 +26,7 @@ namespace CarKits
             InitializeComponent();
         }
 
-        private void addFinalCar_Click(object sender, RoutedEventArgs e)
+        private void add1FinalCar_Click(object sender, RoutedEventArgs e)
         {
             try
             {
