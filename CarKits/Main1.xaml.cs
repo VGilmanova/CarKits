@@ -20,9 +20,9 @@ namespace CarKits
     public partial class Main1 : Window
     {
         Main2 wnd1;
-        public Main1(Main2 w1);
+        
          List<CustomCars> cars = new List<CustomCars>();
-        public Main1()
+        public Main1(Main2 w1)
         {
             wnd1 = w1;
             InitializeComponent();

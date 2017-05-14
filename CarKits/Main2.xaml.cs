@@ -19,8 +19,10 @@ namespace CarKits
     /// </summary>
     public partial class Main2 : Window
     {
-        public Main2()
+        MainWindow wnd2;
+        public Main2(MainWindow w2)
         {
+            wnd2 = w2;
             InitializeComponent();
         }
 

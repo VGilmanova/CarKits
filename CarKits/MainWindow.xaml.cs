@@ -27,7 +27,8 @@ namespace CarKits
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            Main2 wnd2 = new Main2(this);
+            wnd2.Show();
         }
     }
 }
