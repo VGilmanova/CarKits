@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 namespace CarKits
 {
     /// <summary>
@@ -90,18 +92,14 @@ namespace CarKits
 
         private void saveCartxt_Click(object sender, RoutedEventArgs e)
         {
-            using(FileStream fs= new FileStream(@"../../" + saving.Text + ".txt", FileMode.Create, FileAccess.Write))
+            using(FileStream fs= new FileStream(@"../../" + saving.Text + ".dat", FileMode.Create, FileAccess.Write))
             {
-                StreamWriter sr = new StreamWriter(fs, Encoding.Default);
-                foreach(CustomCars crs in cars)
-                {
-                    sr.Write(crs.Brand + " " + crs.Carcase + " " + crs.Capacity + " " + crs.Gearbox + " " + crs.Maxspeed);
-                    sr.WriteLine();
-                }
-                sr.Close();
-                fs.Close();
+                BinaryFormatter sr = new BinaryFormatter();
+                sr.Serialize(fs, cars);
+              
+                
             }
-            MessageBox.Show("Список успешно сохранен в файл" + saving.Text + ".txt");
+            MessageBox.Show("Список успешно сохранен в файл" + saving.Text + ".dat");
         }
     }
 }
