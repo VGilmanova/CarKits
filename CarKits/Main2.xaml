@@ -20,6 +20,6 @@
             <Button Content="SUZUKI" MinWidth="80" Click="SUZUKI_btn"/>
         </StackPanel>
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="324" Margin="33,45,0,0" VerticalAlignment="Top" Width="580"   />
-        <Button x:Name="add1Car_Click" Content="Личный кабинет" HorizontalAlignment="Left" Height="21" Margin="21,423,0,0" VerticalAlignment="Top" Width="188" Click="add1Car_Click"/>
+        <Button x:Name="add1Car" Content="Личный кабинет" HorizontalAlignment="Left" Height="21" Margin="21,423,0,0" VerticalAlignment="Top" Width="188" Click="add1Car_Click"/>
     </Grid>
 </Window>

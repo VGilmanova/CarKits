@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace CarKits
 {
@@ -26,7 +27,7 @@ namespace CarKits
             InitializeComponent();
         }
 
-        private void add1FinalCar_Click(object sender, RoutedEventArgs e)
+        private void addFinalCar_Click(object sender, RoutedEventArgs e)
         {
             try
             {

@@ -85,10 +85,6 @@
     <Compile Include="Characteristics2.cs" />
     <Compile Include="Characteristics3.cs" />
     <Compile Include="CustomCars.cs" />
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main1.xaml.cs">
       <DependentUpon>Main1.xaml</DependentUpon>
     </Compile>

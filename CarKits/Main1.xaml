@@ -8,10 +8,10 @@
         Title="Создайте свой список машин" Height="350" Width="500">
     <Grid>
         <ListBox x:Name="carList" HorizontalAlignment="Left" Height="110" Margin="10,22,0,0" VerticalAlignment="Top" Width="472"/>
-        <Button x:Name="addCar_Click" Content="Добавить машину" HorizontalAlignment="Left" Height="29" Margin="10,164,0,0" VerticalAlignment="Top" Width="156" Click="addCar_Click"/>
-        <Button x:Name="deleteCar_Click" Content="Удалить машину" HorizontalAlignment="Left" Height="29" Margin="10,213,0,0" VerticalAlignment="Top" Width="156" Click="deleteCar_Click"/>
+        <Button x:Name="addCar" Content="Добавить машину" HorizontalAlignment="Left" Height="29" Margin="10,164,0,0" VerticalAlignment="Top" Width="156" Click="addCar_Click"/>
+        <Button x:Name="deleteCar" Content="Удалить машину" HorizontalAlignment="Left" Height="29" Margin="10,213,0,0" VerticalAlignment="Top" Width="156" Click="deleteCar_Click"/>
         <TextBox x:Name="searcher" HorizontalAlignment="Left" Height="29" Margin="296,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
-        <Button x:Name="searchCar_Click" Content="Поиск" HorizontalAlignment="Left" Height="19" Margin="365,198,0,0" VerticalAlignment="Top" Width="79" Click="searchCar_Click"/>
+        <Button x:Name="searchCar" Content="Поиск" HorizontalAlignment="Left" Height="19" Margin="365,198,0,0" VerticalAlignment="Top" Width="79" Click="searchCar_Click"/>
         <TextBox x:Name="saving" HorizontalAlignment="Left" Height="25" Margin="296,241,0,0" TextWrapping="Wrap" Text="Введите название списка" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="saveCartxt" Content="Сохранить" HorizontalAlignment="Left" Margin="369,271,0,0" VerticalAlignment="Top" Width="75" Click="saveCartxt_Click"/>
         <TextBlock x:Name="crsInfo" HorizontalAlignment="Left" Height="38" Margin="10,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="354"/>
