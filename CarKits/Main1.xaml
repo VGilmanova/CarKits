@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="Создайте свой список машин" Height="350" Width="500">
     <Grid>
-        <ListBox x:Name="carList" HorizontalAlignment="Left" Height="110" Margin="10,22,0,0" VerticalAlignment="Top" Width="472"/>
+        <ListBox x:Name="carList" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="110" Margin="10,22,0,0" VerticalAlignment="Top" Width="472">
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding Brand}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button x:Name="addCar" Content="Добавить машину" HorizontalAlignment="Left" Height="29" Margin="10,164,0,0" VerticalAlignment="Top" Width="156" Click="addCar_Click"/>
         <Button x:Name="deleteCar" Content="Удалить машину" HorizontalAlignment="Left" Height="29" Margin="10,213,0,0" VerticalAlignment="Top" Width="156" Click="deleteCar_Click"/>
         <TextBox x:Name="searcher" HorizontalAlignment="Left" Height="29" Margin="296,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
