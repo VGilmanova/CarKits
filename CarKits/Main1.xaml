@@ -10,7 +10,20 @@
         <ListBox x:Name="carList" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="110" Margin="10,22,0,0" VerticalAlignment="Top" Width="472">
             <ListBox.ItemTemplate >
                 <DataTemplate>
-                    <TextBlock Text="{Binding Brand}"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" TextAlignment="Center" FontSize="16" Text="{Binding Brand}"/>
+                        <TextBlock Grid.Column="1" TextAlignment="Center" FontSize="16" Text="{Binding Carcase}"/>
+                        <TextBlock Grid.Column="2" TextAlignment="Center" FontSize="16" Text="{Binding Capacity}"/>
+                        <TextBlock Grid.Column="3" TextAlignment="Center" FontSize="16" Text="{Binding Gearbox}"/>
+                        <TextBlock Grid.Column="4" TextAlignment="Center" FontSize="16" Text="{Binding Maxspeed}"/>
+                    </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
