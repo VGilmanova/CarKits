@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarKits
 {
+    [Serializable]
    public class CustomCars
     {
         private string brand;

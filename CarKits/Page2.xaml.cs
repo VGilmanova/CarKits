@@ -39,7 +39,7 @@ namespace CarKits
                     int maxspeed = int.Parse(sr.ReadLine());
                     string gearbox = sr.ReadLine();
                     string engine = sr.ReadLine();
-                    double weight = double.Parse(sr.ReadLine());
+                    int weight = int.Parse(sr.ReadLine());
                     chrc1.Add(new Characteristics1(brand, carcase, capacity, power, maxspeed, gearbox, engine, weight));
                 }
             foreach (Characteristics1 crist in chrc1)
