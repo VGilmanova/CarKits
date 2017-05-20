@@ -49,5 +49,11 @@ namespace CarKits
             Main1 wnd1 = new Main1(this);
             wnd1.Show();
         }
+
+        private void wb_Click(object sender, RoutedEventArgs e)
+        {
+            WebBr wnd5 = new WebBr(this);
+            wnd5.Show();
+        }
     }
 }

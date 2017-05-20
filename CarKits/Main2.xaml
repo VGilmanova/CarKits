@@ -11,7 +11,7 @@
         <Label x:Name="label" Content="Посмотрите на характеристики предложенных вам машин:" HorizontalAlignment="Left" Height="30" Margin="21,10,0,0" VerticalAlignment="Top" Width="399"/>
         <Label x:Name="label1" Content="Если вы хотите составить собственный список машин, то пройдите по ссылке:" HorizontalAlignment="Left" Height="31" Margin="0,387,0,0" VerticalAlignment="Top" Width="446"/>
         <TextBlock Margin="49,423,540,25">
-            
+
         </TextBlock>
         <StackPanel x:Name="stack" Orientation="Horizontal" HorizontalAlignment="Left" Height="20" Margin="33,0,0,100" VerticalAlignment="Bottom" Width="580">
             <Button Content="BMW" MinWidth="80" Click="BWW_btn"/>
@@ -21,5 +21,6 @@
         </StackPanel>
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="324" Margin="33,45,0,0" VerticalAlignment="Top" Width="580" NavigationUIVisibility="Visible"   />
         <Button x:Name="add1Car" Content="Личный кабинет" HorizontalAlignment="Left" Height="21" Margin="21,423,0,0" VerticalAlignment="Top" Width="188" Click="add1Car_Click"/>
+        <Button x:Name="wb" Content="Поиск в Интернете" HorizontalAlignment="Left" Margin="475,423,0,0" VerticalAlignment="Top" Width="157" Height="21" Click="wb_Click"/>
     </Grid>
 </Window>
