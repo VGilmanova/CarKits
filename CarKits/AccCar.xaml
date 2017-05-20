@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarKits"
         mc:Ignorable="d"
-        Title="AccCar" Height="500" Width="500">
+        Title="Аксессуары для авто" Height="500" Width="500">
     <Grid>
         <ListBox x:Name="accList" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="276" Margin="26,70,0,0" VerticalAlignment="Top" Width="184">
         <ListBox.ItemTemplate >
             <DataTemplate>
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="150"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Column="0" TextAlignment="Center" FontSize="16" Text="{Binding Interior}"/>
                 </Grid>

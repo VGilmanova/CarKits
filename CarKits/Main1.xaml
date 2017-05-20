@@ -27,15 +27,15 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button x:Name="addCar" Content="Добавить машину" HorizontalAlignment="Left" Height="29" Margin="10,164,0,0" VerticalAlignment="Top" Width="156" Click="addCar_Click"/>
-        <Button x:Name="deleteCar" Content="Удалить машину" HorizontalAlignment="Left" Height="29" Margin="10,213,0,0" VerticalAlignment="Top" Width="156" Click="deleteCar_Click"/>
+        <Button x:Name="addCar" Content="Добавить машину" HorizontalAlignment="Left" Height="29" Margin="10,145,0,0" VerticalAlignment="Top" Width="156" Click="addCar_Click"/>
+        <Button x:Name="deleteCar" Content="Удалить машину" HorizontalAlignment="Left" Height="29" Margin="10,188,0,0" VerticalAlignment="Top" Width="156" Click="deleteCar_Click"/>
         <TextBox x:Name="searcher" HorizontalAlignment="Left" Height="29" Margin="296,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="searchCar" Content="Поиск" HorizontalAlignment="Left" Height="19" Margin="365,198,0,0" VerticalAlignment="Top" Width="79" Click="searchCar_Click"/>
         <TextBox x:Name="saving" HorizontalAlignment="Left" Height="25" Margin="296,241,0,0" TextWrapping="Wrap" Text="Введите название списка" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="saveCartxt" Content="Сохранить" HorizontalAlignment="Left" Margin="369,271,0,0" VerticalAlignment="Top" Width="75" Click="saveCartxt_Click"/>
-        <TextBlock x:Name="crsInfo" HorizontalAlignment="Left" Height="38" Margin="10,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="354"/>
-        <Button x:Name="accClick" Content="Аксессуары для авто" HorizontalAlignment="Left" Height="25" Margin="10,284,0,0" VerticalAlignment="Top" Width="156" Click="accClick_Click"/>
-        <Label x:Name="label" Content="Возможно,вас заинтересует:" HorizontalAlignment="Left" Height="31" Margin="10,248,0,0" VerticalAlignment="Top" Width="240"/>
+        <TextBlock x:Name="crsInfo" HorizontalAlignment="Left" Height="38" Margin="10,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="354"/>
+        <Button x:Name="accClick" Content="Аксессуары для авто" HorizontalAlignment="Left" Height="25" Margin="10,254,0,0" VerticalAlignment="Top" Width="156" Click="accClick_Click"/>
+        <Label x:Name="label" Content="Возможно,вас заинтересует:" HorizontalAlignment="Left" Height="31" Margin="10,223,0,0" VerticalAlignment="Top" Width="240"/>
 
     </Grid>
 </Window>
