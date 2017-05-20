@@ -30,19 +30,26 @@ namespace CarKits
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader("../../suzuki.txt", Encoding.Default))
-                while (!sr.EndOfStream)
-                {
-                    string brand = sr.ReadLine();
-                    string carcase = sr.ReadLine();
-                    int capacity = int.Parse(sr.ReadLine());
-                    int power = int.Parse(sr.ReadLine());
-                    int maxspeed = int.Parse(sr.ReadLine());
-                    string gearbox = sr.ReadLine();
-                    string engine = sr.ReadLine();
-                    int weight = int.Parse(sr.ReadLine());
-                    chrc3.Add(new Characteristics3(brand, carcase, capacity, power, maxspeed, gearbox, engine, weight));
-                }
+            try
+            {
+                using (StreamReader sr = new StreamReader("../../suzuki.txt", Encoding.Default))
+                    while (!sr.EndOfStream)
+                    {
+                        string brand = sr.ReadLine();
+                        string carcase = sr.ReadLine();
+                        int capacity = int.Parse(sr.ReadLine());
+                        int power = int.Parse(sr.ReadLine());
+                        int maxspeed = int.Parse(sr.ReadLine());
+                        string gearbox = sr.ReadLine();
+                        string engine = sr.ReadLine();
+                        int weight = int.Parse(sr.ReadLine());
+                        chrc3.Add(new Characteristics3(brand, carcase, capacity, power, maxspeed, gearbox, engine, weight));
+                    }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             foreach (Characteristics3 crist in chrc3)
                 chrc3List.Items.Add(crist.CarInfo3());
 

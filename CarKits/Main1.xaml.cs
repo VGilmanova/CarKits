@@ -29,20 +29,26 @@ namespace CarKits
         {
             wnd1 = w1;
             InitializeComponent();
-
-            using (FileStream fs=new FileStream(@"../../input.txt", FileMode.OpenOrCreate, FileAccess.Read))
+            try
             {
-                string[] data;
-                CustomCars crs;
-                StreamReader sr = new StreamReader(fs, Encoding.Default);
-                while (!sr.EndOfStream)
+                using (FileStream fs = new FileStream(@"../../input.txt", FileMode.OpenOrCreate, FileAccess.Read))
                 {
-                    data = sr.ReadLine().Split(' ');
-                    crs = new CustomCars(data[0], data[1], int.Parse(data[2]), data[3], int.Parse(data[4]));
-                    cars.Add(crs);
+                    string[] data;
+                    CustomCars crs;
+                    StreamReader sr = new StreamReader(fs, Encoding.Default);
+                    while (!sr.EndOfStream)
+                    {
+                        data = sr.ReadLine().Split(' ');
+                        crs = new CustomCars(data[0], data[1], int.Parse(data[2]), data[3], int.Parse(data[4]));
+                        cars.Add(crs);
+                    }
+                    sr.Close();
+                    fs.Close();
+
                 }
-                sr.Close();
-                fs.Close();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             RefreshCarsTXT();
             foreach (CustomCars crs in cars)
@@ -50,16 +56,22 @@ namespace CarKits
         }
         public void RefreshCarsTXT()
         {
-            using (FileStream fs=new FileStream(@"../../Cars.txt", FileMode.Create, FileAccess.Write))
+            try
             {
-                StreamWriter sr = new StreamWriter(fs, Encoding.Default);
-                foreach (CustomCars crs in cars)
+                using (FileStream fs = new FileStream(@"../../Cars.txt", FileMode.Create, FileAccess.Write))
                 {
-                    sr.Write(crs.Brand + " " + crs.Carcase + " " + crs.Capacity + " " + crs.Gearbox + " " + crs.Maxspeed);
-                    sr.WriteLine();
+                    StreamWriter sr = new StreamWriter(fs, Encoding.Default);
+                    foreach (CustomCars crs in cars)
+                    {
+                        sr.Write(crs.Brand + " " + crs.Carcase + " " + crs.Capacity + " " + crs.Gearbox + " " + crs.Maxspeed);
+                        sr.WriteLine();
+                    }
+                    sr.Close();
+                    fs.Close();
                 }
-                sr.Close();
-                fs.Close();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         private void addCar_Click(object sender, RoutedEventArgs e)
@@ -93,14 +105,20 @@ namespace CarKits
 
         private void saveCartxt_Click(object sender, RoutedEventArgs e)
         {
-            using(FileStream fs= new FileStream(@"../../" + saving.Text + ".dat", FileMode.Create, FileAccess.Write))
+            try
             {
-                BinaryFormatter sr = new BinaryFormatter();
-                sr.Serialize(fs, cars);
-              
-                
+                using (FileStream fs = new FileStream(@"../../" + saving.Text + ".dat", FileMode.Create, FileAccess.Write))
+                {
+                    BinaryFormatter sr = new BinaryFormatter();
+                    sr.Serialize(fs, cars);
+
+
+                }
+                MessageBox.Show("Список успешно сохранен и сериалезирован в файл" + " " + saving.Text + ".dat");
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
-            MessageBox.Show("Список успешно сохранен в файл" + saving.Text + ".dat");
         }
 
         private void accClick_Click(object sender, RoutedEventArgs e)

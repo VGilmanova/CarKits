@@ -26,19 +26,25 @@ namespace CarKits
         {
             wnd4 = w4;
             InitializeComponent();
-            using (FileStream fs = new FileStream(@"../../acc.txt", FileMode.OpenOrCreate, FileAccess.Read))
+            try
             {
-                string[] data;
-                Accesories accs;
-                StreamReader sr = new StreamReader(fs, Encoding.Default);
-                while (!sr.EndOfStream)
+                using (FileStream fs = new FileStream(@"../../acc.txt", FileMode.OpenOrCreate, FileAccess.Read))
                 {
-                    data = sr.ReadLine().Split(' ');
-                    accs = new Accesories(data[0]);
-                    acc.Add(accs);
+                    string[] data;
+                    Accesories accs;
+                    StreamReader sr = new StreamReader(fs, Encoding.Default);
+                    while (!sr.EndOfStream)
+                    {
+                        data = sr.ReadLine().Split(' ');
+                        accs = new Accesories(data[0]);
+                        acc.Add(accs);
+                    }
+                    sr.Close();
+                    fs.Close();
                 }
-                sr.Close();
-                fs.Close();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             foreach (Accesories accs in acc)
                 accList.Items.Add(accs);
