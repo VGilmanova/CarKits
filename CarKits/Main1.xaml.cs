@@ -23,6 +23,7 @@ namespace CarKits
     {
         Main2 wnd1;
         
+        
        public  List<CustomCars> cars = new List<CustomCars>();
         public Main1(Main2 w1)
         {
@@ -100,6 +101,12 @@ namespace CarKits
                 
             }
             MessageBox.Show("Список успешно сохранен в файл" + saving.Text + ".dat");
+        }
+
+        private void accClick_Click(object sender, RoutedEventArgs e)
+        {
+            AccCar wnd4 = new AccCar(this);
+            wnd4.Show();
         }
     }
 }

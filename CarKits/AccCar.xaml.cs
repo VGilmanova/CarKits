@@ -20,9 +20,11 @@ namespace CarKits
     /// </summary>
     public partial class AccCar : Window
     {
+        Main1 wnd4;
         public List<Accesories> acc = new List<Accesories>();
-        public AccCar()
+        public AccCar(Main1 w4)
         {
+            wnd4 = w4;
             InitializeComponent();
             using (FileStream fs = new FileStream(@"../../acc.txt", FileMode.OpenOrCreate, FileAccess.Read))
             {

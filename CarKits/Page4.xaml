@@ -9,8 +9,8 @@
 
     <Grid>
         <TextBlock Text="SUZUKI" HorizontalAlignment="Center" FontSize="32"/>
-        <ListBox x:Name="chrc3List" HorizontalAlignment="Left" Height="186" Margin="0,63,0,0" VerticalAlignment="Top" Width="273"/>
-        <Button x:Name="button" Content="Показать данные"  HorizontalAlignment="Left" Height="29" Margin="145,261,0,0" VerticalAlignment="Top" Width="128" Click="button_Click"/>
+        <ListBox x:Name="chrc3List" HorizontalAlignment="Left" Height="174" Margin="0,63,0,0" VerticalAlignment="Top" Width="273"/>
+        <Button x:Name="button" Content="Показать данные"  HorizontalAlignment="Left" Height="29" Margin="145,242,0,0" VerticalAlignment="Top" Width="128" Click="button_Click"/>
 
     </Grid>
 </Page>

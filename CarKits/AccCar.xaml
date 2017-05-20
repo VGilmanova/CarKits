@@ -19,6 +19,7 @@
             </DataTemplate>
         </ListBox.ItemTemplate>
         </ListBox>
+        <Label x:Name="label" Content="Аксессуары для интерьера машины:" HorizontalAlignment="Left" Height="35" Margin="26,30,0,0" VerticalAlignment="Top" Width="410"/>
 
     </Grid>
 </Window>
