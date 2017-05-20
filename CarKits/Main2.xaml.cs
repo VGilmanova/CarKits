@@ -25,11 +25,13 @@ namespace CarKits
             wnd2 = w2;
             InitializeComponent();
         }
+        
 
         private void BWW_btn(object sender, RoutedEventArgs e)
         {
             Main.Content = new Page1();
         }
+    
         private void AUDI_btn(object sender, RoutedEventArgs e)
         {
             Main.Content = new Page2();
